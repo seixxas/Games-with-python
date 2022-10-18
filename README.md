@@ -1,1 +1,1 @@
-## Jogo de adivinhação usando python
+## Jogos usando python
