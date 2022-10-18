@@ -11,7 +11,7 @@ total_de_tentativas = 5
 
 tentativa_atual = 1
 
-while(tentativa_atual <= total_de_tentativas):
+for tentativa_atual in range(1, total_de_tentativas + 1): 
     print("Tentativa {} de {}".format(tentativa_atual, total_de_tentativas))
     chute = int(input("Digite um numero: "))
 
@@ -22,13 +22,13 @@ while(tentativa_atual <= total_de_tentativas):
     if(acertou):
         print("Voce acertou!")
         break
-    else:
+    else:   
         if(chute_menor):
             print("Seu chute foi menor que o numero secreto.")
         elif(chute_maior):
              print("Seu chute foi maior que o numero secreto.")    
     
-    tentativa_atual +=1
+print("Fim de jogo")    
     
     
 
